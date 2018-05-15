@@ -1,0 +1,58 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: chhaya-kube-back
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: chhaya-kube-back
+    spec:
+      containers:
+      - name: chhaya-kube-back
+        image: redis
+        ports:
+        - containerPort: 6888
+          name: redis
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: chhaya-kube-back
+spec:
+  ports:
+  - port: 6888
+  selector:
+    app: chhaya-kube-back
+---
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: chhaya-kube-front
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: chhaya-kube-front
+    spec:
+      containers:
+      - name: chhaya-kube-front
+        image: crcsdemokube.azurecr.io/kubedemoapp:v1
+        ports:
+        - containerPort: 80
+        env:
+        - name: REDIS
+          value: "chhaya-kube-back"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: chhaya-kube-front
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: chhaya-kube-front

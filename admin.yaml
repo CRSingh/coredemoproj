@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: ClusterRoleBinding
+metadata:
+  name: kubeapp-dashboard
+  labels:
+    k8s-app: kubernetes-dashboard
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+subjects:
+- kind: ServiceAccount
+  name: kubeapp-dashboard
+  namespace: kube-system

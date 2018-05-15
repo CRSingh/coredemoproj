@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: kubeapp-deployment
+spec:
+  replicas: 3  
+  minReadySeconds: 10
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1 
+  template:
+    metadata:
+      labels:
+        app: kubeapp
+    spec:
+      containers:
+      - name: kubeapp
+        image: crcsdemokube.azurecr.io/kubedemoapp:v1        
+        ports:
+        - containerPort: 80
+        imagePullPolicy: Always   

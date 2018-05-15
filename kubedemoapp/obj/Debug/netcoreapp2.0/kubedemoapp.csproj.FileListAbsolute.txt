@@ -1,0 +1,11 @@
+C:\Chhaya\DockerProject\projects\kubedemoapp\kubedemoapp\bin\Debug\netcoreapp2.0\kubedemoapp.deps.json
+C:\Chhaya\DockerProject\projects\kubedemoapp\kubedemoapp\bin\Debug\netcoreapp2.0\kubedemoapp.runtimeconfig.json
+C:\Chhaya\DockerProject\projects\kubedemoapp\kubedemoapp\bin\Debug\netcoreapp2.0\kubedemoapp.runtimeconfig.dev.json
+C:\Chhaya\DockerProject\projects\kubedemoapp\kubedemoapp\bin\Debug\netcoreapp2.0\kubedemoapp.dll
+C:\Chhaya\DockerProject\projects\kubedemoapp\kubedemoapp\bin\Debug\netcoreapp2.0\kubedemoapp.pdb
+C:\Chhaya\DockerProject\projects\kubedemoapp\kubedemoapp\obj\Debug\netcoreapp2.0\kubedemoapp.csprojResolveAssemblyReference.cache
+C:\Chhaya\DockerProject\projects\kubedemoapp\kubedemoapp\obj\Debug\netcoreapp2.0\kubedemoapp.csproj.CoreCompileInputs.cache
+C:\Chhaya\DockerProject\projects\kubedemoapp\kubedemoapp\obj\Debug\netcoreapp2.0\kubedemoapp.AssemblyInfoInputs.cache
+C:\Chhaya\DockerProject\projects\kubedemoapp\kubedemoapp\obj\Debug\netcoreapp2.0\kubedemoapp.AssemblyInfo.cs
+C:\Chhaya\DockerProject\projects\kubedemoapp\kubedemoapp\obj\Debug\netcoreapp2.0\kubedemoapp.dll
+C:\Chhaya\DockerProject\projects\kubedemoapp\kubedemoapp\obj\Debug\netcoreapp2.0\kubedemoapp.pdb

@@ -1,0 +1,15 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  kubedemoapp:
+    build:
+      context: C:\Chhaya\DockerProject\projects\kubedemoapp
+      dockerfile: kubedemoapp\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: kubedemoapp
+    ports:
+    - 80/tcp
+version: '3.0'

@@ -1,0 +1,1 @@
+C:\Chhaya\DockerProject\projects\kubedemoapp\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
